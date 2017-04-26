@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>converter</title>
     <link rel="stylesheet" href="">
-  </head>
-  <title>converter</title>
+</head>
+<title>converter</title>
 <link rel="stylesheet" href="">
 
 <body>
-  <div class="Temperature Converter">
-    <h1>Temperature Converstion</h1>
-    <div class="Input">
-      <label name="temp">Temperature</label>
-      <input type="text" id="tempInput">
-      <br>
+    <div class="Temperature Converter">
+        <h1>Temperature Converstion</h1>
+        <div class="Input">
+            <label name="temp">Temperature</label>
+            <input type="text" id="tempInput">
+            <br>
+        </div>
+        <div class="Buttons">
+            <input type="radio" id="celsius" class="buttons" name="re"> Celsius
+            <br>
+            <input type="radio" id="fahrenheit" class="buttons" name="re"> Fahrenheit
+        </div>
+        <div class="convert_button">
+            <button type="submit" id="converter">Convert</button>
+        </div>
+        <div class="output">
+            <label>Result</label>
+            <input type="text" id="tempOutput">
+            <br>
+        </div>
+        <div class="clear_button">
+            <button type="reset" id="clear">Clear</button>
+        </div>
     </div>
-
-    <div class="Buttons">
-      <input type="radio" id="celsius" class="buttons" name="re"> Celsius
-      <br>
-      <input type="radio" id="fahrenheit" class="buttons" name="re"> Fahrenheit
-    </div>
-
-    <div class="convert_button">
-      <button type="submit" id="converter">Convert</button>
-    </div>
-
-    <div class="output">
-      <label>Result</label>
-      <input type="text" id="tempOutput">
-      <br>
-    </div>
-    <div class="clear_button">
-      <button type="reset" id="clear">Clear</button>
-    </div>
-
-  </div>
-  <script src="converter.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="converter.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
 </html>
-
-
-<!-- If the temperature is greater than 90F/32C the color of the converted temperature should be red. -->
-<!-- If the temperature is less than 32F/0C the color of the converted temperature should be blue. -->
-<!-- For any other temperature, the color should be green. --> 
